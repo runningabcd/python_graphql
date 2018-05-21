@@ -3,7 +3,7 @@ from flask_graphql import GraphQLView
 import sys
 import os
 
-lib_dir = os.path.dirname(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), ""))
+lib_dir = os.path.dirname(os.path.realpath(__file__))
 parent_dir = os.path.dirname(lib_dir)
 sys.path.append(lib_dir)
 sys.path.append(parent_dir)
