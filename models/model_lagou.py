@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import (scoped_session, sessionmaker, relationship, backref)
 import os
 
-STAG_URI = os.getenv('STAG_URI')
+STAG_URI = os.getenv('STAGURI')
 engine = create_engine(STAG_URI,
                        convert_unicode=True)
 db_session = scoped_session(sessionmaker(bind=engine))
